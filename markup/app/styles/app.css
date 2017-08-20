@@ -1,0 +1,229 @@
+/**
+ * CSS easings below
+ *
+ * See listed eases and make your own here:
+ * http://matthewlein.com/ceaser/
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'poppinsbold';
+  src: url(/app/styles/fonts/poppins-bold-webfont.eot);
+  src: url(/app/styles/fonts/poppins-bold-webfont.eot?#iefix) format("embedded-opentype"), url(/app/styles/fonts/poppins-bold-webfont.woff2) format("woff2"), url(/app/styles/fonts/poppins-bold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'poppinslight';
+  src: url(/app/styles/fonts/poppins-light-webfont.eot);
+  src: url(/app/styles/fonts/poppins-light-webfont.eot?#iefix) format("embedded-opentype"), url(/app/styles/fonts/poppins-light-webfont.woff2) format("woff2"), url(/app/styles/fonts/poppins-light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'poppinsmedium';
+  src: url(/app/styles/fonts/poppins-medium-webfont.eot);
+  src: url(/app/styles/fonts/poppins-medium-webfont.eot?#iefix) format("embedded-opentype"), url(/app/styles/fonts/poppins-medium-webfont.woff2) format("woff2"), url(/app/styles/fonts/poppins-medium-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'poppinsregular';
+  src: url(/app/styles/fonts/poppins-regular-webfont.eot);
+  src: url(/app/styles/fonts/poppins-regular-webfont.eot?#iefix) format("embedded-opentype"), url(/app/styles/fonts/poppins-regular-webfont.woff2) format("woff2"), url(/app/styles/fonts/poppins-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'poppinssemibold';
+  src: url(/app/styles/fonts/poppins-semibold-webfont.eot);
+  src: url(/app/styles/fonts/poppins-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(/app/styles/fonts/poppins-semibold-webfont.woff2) format("woff2"), url(/app/styles/fonts/poppins-semibold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url(/app/styles/fonts/fontawesome-webfont.eot);
+  src: url(/app/styles/fonts/fontawesome-webfont.eot?#iefix) format("embedded-opentype"), url(/app/styles/fonts/fontawesome-webfont.woff2) format("woff2"), url(/app/styles/fonts/fontawesome-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'crimson-textbold-italic';
+  src: url(/app/styles/fonts/crimsontext-bolditalic-webfont.eot);
+  src: url(/app/styles/fonts/crimsontext-bolditalic-webfont.eot?#iefix) format("embedded-opentype"), url(/app/styles/fonts/crimsontext-bolditalic-webfont.woff2) format("woff2"), url(/app/styles/fonts/crimsontext-bolditalic-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'crimson-textitalic';
+  src: url(/app/styles/fonts/crimsontext-italic-webfont.eot);
+  src: url(/app/styles/fonts/crimsontext-italic-webfont.eot?#iefix) format("embedded-opentype"), url(/app/styles/fonts/crimsontext-italic-webfont.woff2) format("woff2"), url(/app/styles/fonts/crimsontext-italic-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'crimson-textsemibold-italic';
+  src: url(/app/styles/fonts/crimsontext-semibolditalic-webfont.eot);
+  src: url(/app/styles/fonts/crimsontext-semibolditalic-webfont.eot?#iefix) format("embedded-opentype"), url(/app/styles/fonts/crimsontext-semibolditalic-webfont.woff2) format("woff2"), url(/app/styles/fonts/crimsontext-semibolditalic-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #FFFFFF;
+  color: #262626; }
+
+h2 {
+  font-family: 'poppinsbold', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: #262626;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  opacity: 0; }
+
+p {
+  font-family: 'poppinsregular', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #262626;
+  opacity: .8;
+  letter-spacing: 1px;
+  opacity: 0; }
+
+a {
+  color: #262626;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer; }
+
+h2 a::after {
+  content: '';
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  z-index: 1;
+  width: 0;
+  background-color: #FACA33; }
+
+h2 a:hover::after {
+  width: 100%; }
+
+::selection {
+  color: #262626;
+  background: #FACA33; }
+
+sup {
+  vertical-align: super;
+  font-size: 13px;
+  color: #D7D0C8; }
+
+ul,
+ol,
+table,
+p {
+  margin-bottom: 20px; }
+
+ul,
+ol {
+  list-style: none; }
+
+ul ul {
+  margin-bottom: 0; }
+
+.color-yellow {
+  color: #FACA33; }
+
+.crimson {
+  font-family: 'crimson-textbold-italic';
+  font-size: 115%; }
+
+main {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 20px; }
+
+.img {
+  height: 105px;
+  width: 105px;
+  border-radius: 50%;
+  background-image: url(/app/static/me.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; }
+
+ul {
+  margin-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  opacity: 0; }
+
+ul li {
+  margin: 5px;
+  font-family: 'poppinsbold', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #262626;
+  letter-spacing: 1px;
+  line-height: 1.6; }
+
+ul li a {
+  padding: 5px; }
+
+ul li a:hover {
+  background-color: #262626;
+  color: #ffffff; }
+
+/*# sourceMappingURL=app.css.map*/
